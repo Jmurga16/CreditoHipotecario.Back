@@ -8,7 +8,16 @@
 
   <ItemGroup>
     <Folder Include="Common\Validators\" />
-    <Folder Include="Menu\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ADONet\ADONet.csproj" />
+    <ProjectReference Include="..\UseCasesPorts\UseCasesPorts.csproj" />
   </ItemGroup>
 
 </Project>

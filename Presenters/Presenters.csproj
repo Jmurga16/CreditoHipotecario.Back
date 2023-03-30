@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UseCasesDTOs\UseCasesDTOs.csproj" />
+    <ProjectReference Include="..\UseCasesPorts\UseCasesPorts.csproj" />
+  </ItemGroup>
+
 </Project>
