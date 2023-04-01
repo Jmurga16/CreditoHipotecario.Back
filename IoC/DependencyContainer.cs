@@ -9,6 +9,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UseCases.Login;
+using UseCasesPorts.Login;
+using Presenters.Login;
+using UseCases.Perfil.Password;
+using UseCasesPorts.Perfil.Password;
+using Presenters.Perfil.Password;
 
 namespace IoC
 {
@@ -23,6 +29,11 @@ namespace IoC
             services.AddScoped<IListMenuInputPort, ListMenuInteractor>();
             services.AddScoped<IListMenuOutputPort, ListMenuPresenter>();
 
+            services.AddScoped<ILoginInputPort, LoginInteractor>();
+            services.AddScoped<ILoginOutputPort, LoginPresenter>();
+
+            services.AddScoped<IPasswordInputPort, PasswordInteractor>();
+            services.AddScoped<IPasswordOutputPort, PasswordPresenter>();
 
             return services;
         }

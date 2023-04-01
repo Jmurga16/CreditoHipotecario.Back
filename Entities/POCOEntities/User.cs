@@ -13,5 +13,6 @@ namespace Entities.POCOEntities
         public string? Password { get; set; }
         public int IdUserType { get; set; }
         public bool IsActive { get; set; }
+        public int IsTried { get; set; }
     }
 }
